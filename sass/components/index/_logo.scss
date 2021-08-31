@@ -1,0 +1,16 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: $accent-color;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  margin-right: 93px;
+}
+.logo__accent {
+  color: $black-text-color;
+
+  &--reverse {
+    color: $white-text-color;
+  }
+}
