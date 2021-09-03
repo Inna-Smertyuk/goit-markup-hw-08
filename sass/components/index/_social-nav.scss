@@ -1,0 +1,19 @@
+.social-nav {
+  display: flex;
+}
+.social-nav__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
+.social-nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+.social-nav__item:nth-child(1) .social-nav__link::after {
+  display: none;
+}
