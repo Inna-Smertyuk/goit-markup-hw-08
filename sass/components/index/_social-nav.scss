@@ -1,7 +1,7 @@
 .social-nav {
   display: flex;
 }
-.social-nav .social-nav__link {
+.social-nav__link {
   position: relative;
   font-weight: 500;
   font-size: 18px;
@@ -9,26 +9,19 @@
   letter-spacing: 0.02em;
 
   color: $accent-color;
-}
-.social-nav__item:not(:last-child) {
-  margin-right: 20px;
-}
-.social-nav__item:nth-child(1) .social-nav__link::after {
-  display: none;
-}
-c &::after {
-  position: absolute;
-  left: -20px;
-  bottom: 10px;
-  content: '';
-  display: block;
-  width: 22px;
-  height: 0;
+  &::after {
+    position: absolute;
+    left: -20px;
+    bottom: 10px;
+    content: '';
+    display: block;
+    width: 22px;
+    height: 0;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
-
 .social-nav__item:not(:last-child) {
   margin-right: 20px;
 }
