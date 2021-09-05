@@ -1,22 +1,24 @@
 .footer {
   background: $hero-footer-color;
   padding: 60px 0;
+
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }
 .contacts {
   align-items: center;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 231px;
   }
 }
 
 .footer-container {
-  @media screen and(max-width:767px) {
-    text-align: center;
-  }
   @media screen and(min-width:1199px) {
     display: flex;
   }
 }
+
 .tablet {
   @media screen and(min-width:768px) {
     display: flex;
@@ -28,11 +30,13 @@
   }
 }
 
-.footer-logo {
-  margin: 0px 0px 20px 0px;
+@media screen and(main-width:767px) {
+  .footer-logo {
+    margin: 0 0 20px 0;
+  }
 }
 .address {
-  @media screen and(max-width:767px) {
+  @media screen and(main-width:767px) {
     &:last-child {
       margin-bottom: 30px;
     }
