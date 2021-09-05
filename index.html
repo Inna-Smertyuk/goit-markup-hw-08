@@ -187,7 +187,9 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img src="./images/img4.jpg" alt="фото Игоря Демьяненка" width="270" height="260"/>
+                        <img  srcset="./images/cards/card1@1.jpg 1x, ./images/cards/card1@2.jpg 2x" 
+                        sizes="(min-width: 1200px) 25vh, (min-width: 768px) 50vh, 100vh"
+                        src="./images/cards/card1@1.jpg"  alt="фото Игоря Демьяненка" />
                         <div class="team__card">
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p class="team__description">Product Designer</p>
@@ -229,7 +231,9 @@
                  </li>
 
                      <li class="team__item">
-                        <img src="./images/img5.jpg" alt="фото Ольги Репиной" width="270" height="260"/>
+                        <img srcset="./images/cards/card2@1.jpg 1x, ./images/cards/card2@2.jpg 2x" 
+                        sizes="(min-width: 1200px) 25vh, (min-width: 768px) 50vh, 100vh"
+                        src="./images/cards/card2@1.jpg" alt="фото Ольги Репиной" />
                         <div class="team__card">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__description">Frontend Developer</p>
@@ -270,7 +274,9 @@
                     </li>
                         
                     <li class="team__item">
-                         <img src="./images/img6.jpg" alt="фото Николая Тарасова" width="270" height="260"/>
+                         <img srcset="./images/cards/card3@1.jpg 1x, ./images/cards/card3@2.jpg 2x"
+                          sizes="(min-width: 1200px) 25vh, (min-width: 768px) 50vh, 100vh"
+                         src="./images/cards/card3@1.jpg" alt="фото Николая Тарасова"/>
                         <div class="team__card">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__description">Marketing</p>
@@ -311,7 +317,9 @@
                     </li>
                         
                     <li class="team__item">
-                        <img src="./images/img7.jpg" alt="фото Михаила Ермакова" width="270" height="260"/>
+                        <img srcset="./images/cards/card4@1.jpg 1x, ./images/cards/card4@2.jpg 2x" 
+                        sizes="(min-width: 1200px) 25vh, (min-width: 768px) 50vh, 100vh"
+                        src="/images/cards/card4@1.jpg" alt="фото Михаила Ермакова"/>
                         <div class="team__card">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__description">UI Designer</p>
@@ -363,43 +371,43 @@
             <ul class="clients">
                 <li class="clients__item">
                     <a href="#" class="clients__link">
-                        <svg class="clients__icon" width="160" height="60">
-                            <use href="./images/icons.svg#icon-Logo1"></use> 
+                        <svg class="clients__icon" width="106" height="60">
+                            <use href="./images/icons.svg#icon-Logo1" ></use> 
                         </svg>
                     </a>
                 </li>
 
                 <li class="clients__item">
                     <a href="#" class="clients__link">
-                        <svg class="clients__icon" width="160" height="60">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./images/icons.svg#icon-Logo2"></use> </svg>
                     </a>
                 </li>
 
                 <li class="clients__item">
                     <a href="#" class="clients__link">
-                        <svg class="clients__icon" width="160" height="60">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./images/icons.svg#icon-Logo3"></use></svg>
                     </a>
                 </li>
 
                 <li class="clients__item">
                     <a href="#" class="clients__link">
-                        <svg class="clients__icon" width="160" height="60">
-                            <use href="./images/icons.svg#icon-Logo4"></use></svg>
+                        <svg class="clients__icon" width="106" height="60">
+                            <use href="./images/icons.svg#icon-Logo4" ></use></svg>
                     </a>
                 </li>
 
                 <li class="clients__item">
                     <a href="#" class="clients__link">
-                        <svg class="clients__icon" width="160" height="60">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./images/icons.svg#icon-Logo5"></use></svg>
                     </a>
                 </li>
 
                 <li class="clients__item">
                     <a href="#" class="clients__link">
-                        <svg class="clients__icon" width="160" height="60">
+                        <svg class="clients__icon" width="106" height="60">
                             <use href="./images/icons.svg#icon-Logo6"></use></svg>
                     </a>
                 </li>
@@ -415,7 +423,8 @@
     <!--Футер-->
     <footer class="footer">
         <div class="container footer-container">
-            <div>
+            <div class="tablet">
+            <div class="contacts">
                 <a class="logo footer-logo" href= "./index.html">Web<span class="logo__accent logo__accent--reverse">Studio</span></a>
                     <address>
                         <ul class="address">
@@ -462,7 +471,10 @@
                 </a>
           </li>
         </ul>
-    </div>
+        </div>
+        </div>
+
+    
 
     <div class="subscription">
         <p class="subscription__text">Подпишитесь на рассылку</p>
@@ -478,8 +490,8 @@
            </form>
     </div>
 
-    </div>
-    
+   
+  </div>  
 </footer>
 
   <!--Модальное окно-->  

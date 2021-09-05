@@ -1,7 +1,18 @@
 .accession {
   display: inline-block;
   margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1199px) {
+    margin-left: 70px;
+    width: 206px;
+  }
 }
+
 .accession__text {
   line-height: 1.14;
   text-transform: uppercase;
@@ -18,6 +29,12 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  @media screen and(max-width:767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(max-width:1199px) {
+    justify-content: center;
+  }
 }
 .socials__item {
   margin-right: 10px;
