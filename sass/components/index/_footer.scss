@@ -2,46 +2,54 @@
   background: $hero-footer-color;
   padding: 60px 0;
 
-  @media screen and(max-width:767px) {
+  @media screen and (min-width: 768px) {
     text-align: center;
+    display: flex;
   }
 }
 
 .footer-container {
-  @media screen and(min-width:1199px) {
-    display: flex;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    display: block;
   }
-}
-.contacts {
-  align-items: center;
   @media screen and (min-width: 768px) {
-    width: 231px;
-  }
-}
-.tablet {
-  @media screen and(min-width:768px) {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  @media screen and(min-width:768px) and(max-width:1199px) {
-    margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
-@media screen and(main-width:767px) {
-  .footer-logo {
-    margin: 0 0 20px 0;
+.contacts {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
+
+.footer-logo {
+  margin: 0 0 20px 0;
+}
+
 .address {
-  @media screen and(main-width:767px) {
+  font-style: normal;
+  @media screen and (main-width: 767px) {
     &:last-child {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-top: 20px;
 

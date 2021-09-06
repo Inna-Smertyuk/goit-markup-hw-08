@@ -1,15 +1,9 @@
 .accession {
-  display: inline-block;
-  margin-left: 70px;
-  @media screen and (max-width: 767px) {
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
-  @media screen and (min-width: 1199px) {
-    margin-left: 70px;
-    width: 206px;
+  display: block;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 93px;
   }
 }
 
@@ -20,7 +14,6 @@
   font-style: normal;
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 14px;
 }
 .socials__icon {
   fill: $white-text-color;
@@ -28,14 +21,17 @@
 
 .socials {
   display: flex;
-  justify-content: space-between;
-  @media screen and(max-width:767px) {
-    margin-bottom: 60px;
-  }
-  @media screen and(max-width:1199px) {
+  justify-content: center;
+
+  @media screen and (min-width: 480px) {
     justify-content: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+
 .socials__item {
   margin-right: 10px;
 
@@ -43,6 +39,7 @@
     margin-right: 0px;
   }
 }
+
 .socials__link {
   width: 44px;
   height: 44px;
