@@ -437,15 +437,23 @@ img {
 
 .hero {
   display: block;
-  background-color: #2f303a;
-  height: 400px;
   text-align: center;
+  max-width: 1600px;
+  height: 400px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 1600px;
+  background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -493,10 +501,10 @@ img {
 .hero__title {
   display: block;
   margin-bottom: 30px;
-  color: #ffffff;
   font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
+  color: #ffffff;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -934,6 +942,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1199px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .contacts {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -943,14 +959,6 @@ img {
 @media screen and (min-width: 768px) {
   .contacts {
     width: 231px;
-  }
-}
-
-@media screen and (min-width: 1199px) {
-  .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -1220,6 +1228,7 @@ img {
   min-width: 200px;
   height: 50px;
   padding: 10px 28px 10px 28px;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
