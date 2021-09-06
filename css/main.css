@@ -158,6 +158,9 @@ img {
     font-size: 26px;
     line-height: 1.19;
     margin-right: 93px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -337,7 +340,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts-list__item + .contacts-list__item {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
