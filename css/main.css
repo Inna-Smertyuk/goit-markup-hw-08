@@ -317,7 +317,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 305px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -523,7 +525,7 @@ img {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   border: transparent;
   font-weight: 700;
   font-size: 16px;
