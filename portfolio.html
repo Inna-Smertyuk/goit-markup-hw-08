@@ -12,25 +12,25 @@
     <link rel="stylesheet" href="./css/main.min.css ">
     
 </head>
-<body class="page">
+<body>   <!--class="page">-->
 <!--Шапка сайта-->
 <header class="header">
     <div class="container header__container">
         <a class="logo" href="./index.html">Web<span class="logo__accent">Studio</span></a>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use href="./images/icons-menu.svg#icon-menu_40px"></use>
+                <use class="icon-menu" href="./images/icons-menu.svg#icon-menu_40px"></use>
             </svg>
         </button>
         
         <div class="menu">
-        <nav>
+        <!--<nav>-->
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
                 <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
             </ul>
-        </nav>
+       <!---</nav>-->
 
         <ul class="contacts-list">
             <li class="contacts-list__item">
@@ -52,23 +52,22 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
         <svg width="40" height="40" aria-label="Кнопка закрытия меню">
-            <use href="./images/icons-menu.svg#icon-close_40px"></use>
+            <use class="icon-cross" href="./images/icons-menu.svg#icon-close_40px"></use>
         </svg>
     </button>
 
     <div class="mobile-menu">
 
         <ul class="site-nav">
-            <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
         </ul>
         <ul class="contacts-list">
             <li class="contacts-list__item">
-                <a href="mailto:info@devstudio.com" class="contacts-list__link-mail">info@devstudio.com</a>
-            </li>
-            <li class="contacts-list__item">
                 <a href="tel:+380961111111" class="contacts-list__link-tel">+38 096 111 11 11</a>
+            </li><li class="contacts-list__item">
+                <a href="mailto:info@devstudio.com" class="contacts-list__link-mail">info@devstudio.com</a>
             </li>
         </ul>
 
@@ -348,10 +347,9 @@
 </footer>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
+ integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+ crossorigin="anonymous"></script>
 <script defer src="js/mobile-menu.js"></script>
-
 </body>
 
 </html>

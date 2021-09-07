@@ -18,15 +18,24 @@
 
   &:hover,
   &:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    color: $accent-color;
   }
 }
+/*.menu-toggle:hover .icon-cross,
+.menu-toggle:focus .icon-cross {
+  fill: $accent-color;
+}*/
+/*.menu-toggle:hover .icon-menu,
+.menu-toggle:focus .icon-menu {
+  fill: $accent-color;
+}*/
 
 .menu {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
+  width: 100%;
   align-items: center;
 }
 @media (max-width: 767px) {
@@ -35,8 +44,8 @@
   }
 }
 
-.menu.site-nav__link,
-.menu.contacts-list__link {
+.menu .site-nav__link,
+.menu .contacts-list__link {
   text-decoration: none;
   color: inherit;
 }

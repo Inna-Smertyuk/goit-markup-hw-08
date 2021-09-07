@@ -8,7 +8,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: space-between;
+    margin-left: auto;
   }
 }
 .contacts-list__item {
@@ -84,6 +84,10 @@
     margin-bottom: 64px;
   }
 }
+.contacts-list__link-tel {
+  color: $accent-color;
+}
+
 .contacts-list__icon {
   @media screen and (max-width: 767px) {
     display: none;
