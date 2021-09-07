@@ -5,9 +5,11 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-/*body.modal-open {
+body .modal-open {
   overflow: hidden;
-}*/
+  position: fixed;
+  width: 100%;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -38,9 +40,7 @@ img {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-  /*@media screen and (max-width: 767px) {
-    width: 480px;
-  }*/
+
   @media screen and (min-width: 768px) {
     width: 768px;
   }
